@@ -1,0 +1,30 @@
+{
+  "name": "statistic-counter",
+  "version": "1.0.0",
+  "description": "Small tool for calculating mean and standart deviation",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/life777/statistic-counter.git"
+  },
+  "keywords": [
+    "mean",
+    "standert",
+    "deviation"
+  ],
+  "author": "Vladimir Dashukevich <dashukevichvova@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/life777/statistic-counter/issues"
+  },
+  "homepage": "https://github.com/life777/statistic-counter#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
