@@ -3,24 +3,26 @@ const MeanCounter = require("./mean.js");
 class StandartDeviationCounter {
     constructor () {
         this.meanCounter = new MeanCounter();
-        this.qSum = 0;
+        this.sn = 0;
     }
 
     add (val) {
+        let prevMean = this.meanCounter.calculate();
         this.meanCounter.add(val);
-        this.qSum += Math.pow(val, 2);
+
+        let currMean = this.meanCounter.calculate();
+        this.sn += (val - prevMean) * (val - currMean);
     }
 
     calculate () {
         let counter = this.meanCounter.getCounter();
-        let mean = this.meanCounter.calculate();
 
         if (counter === 0) {
             return 0;
         }
 
-        return this.qSum / counter - Math.pow(mean, 2);
+        return Math.sqrt(this.sn / counter);
     }
-}
+}1
 
 module.exports = StandartDeviationCounter;
