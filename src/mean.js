@@ -9,6 +9,10 @@ class MeanCounter {
         this.mean += (val - this.mean) / this.counter;
     }
 
+    getCounter () {
+        return this.counter;
+    }
+
     calculate () {
         return this.mean;
     }

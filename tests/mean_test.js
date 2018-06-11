@@ -35,4 +35,14 @@ describe('Calculate mean', function() {
         
         assert.equal(this.mean.calculate(), 6004799503160661);
     });
+
+    it("Check counter default value", function() {
+        assert.equal(this.mean.getCounter(), 0);
+    });
+
+    it("Check counter value", function() {
+        [ 1, 1, 1 ].forEach(n => { this.mean.add(n) });
+
+        assert.equal(this.mean.getCounter(), 3);
+    });
 });
