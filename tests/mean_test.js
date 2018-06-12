@@ -6,7 +6,6 @@ describe('Calculate mean', function() {
         this.mean = new MeanCounter();
     });
 
-
     it("Default value should be 0", function() {
         assert.equal(this.mean.calculate(), 0);
     });

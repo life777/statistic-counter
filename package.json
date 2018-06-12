@@ -24,7 +24,7 @@
     "url": "https://github.com/life777/statistic-counter/issues"
   },
   "homepage": "https://github.com/life777/statistic-counter#readme",
-  "dependencies": {
+  "devDependencies": {
     "mocha": "^5.2.0"
   }
 }

@@ -23,6 +23,6 @@ class StandartDeviationCounter {
 
         return Math.sqrt(this.sn / counter);
     }
-}1
+}
 
 module.exports = StandartDeviationCounter;
